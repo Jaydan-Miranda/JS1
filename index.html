@@ -16,13 +16,13 @@
         <!-- Empty place -->
     </div>
     <h1> This the footer of the page</h1>
-    <button id="btnClickMe" onclick="" >Click me</button>
+    <button id="btnClickMe" onclick="windows.alert()" >Click me</button>
     <button id="btnGoBack">Go Back</button>
     <a href="new.html">New Page</a>
 
     <br> <br> <br>
     <label for="username">Username: </label>
-    <input type="text" onchange = "handleChange();" name="username" id="username">
+    <input type="text" name="username" onchange = "handleChange();" id="username">
     <!-- <p>This is the end</p> -->
 
 
@@ -32,3 +32,16 @@
 
 
 </html>
+<!-- how to associate an event handler to an event
+    1.inline javascript
+     <button id="btnClickMe" onclick="windows.alert()" >Click me</button>
+    2.process in seperate javascript file by declaring variable and use on property
+        username.onchange = function () {
+            container.innerHTML = usernmae.value;
+        }
+    3.create a function in javascript file and reference to that function.
+        <input type="text" name="username" onchange = "handleChange();" id="username">
+    4. use the addEventListener method to associate the event to the action handler
+        username.addEventListener("change", handleChange);
+
+-->

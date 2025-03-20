@@ -60,8 +60,9 @@ footer.onclick = function () {
 }
 
 // //declare a variable to work with input text username
+ let username = document.getElementById("username");
 
-// let username = document.getElementById("username");
+username.addEventListener("change", handleChange);
 
 // //add the action to event change
 
